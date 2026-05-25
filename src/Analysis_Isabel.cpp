@@ -156,7 +156,7 @@ namespace Gambit {
 
         vector<const HEPUtils::Jet*> baselineJets;
           for (const HEPUtils::Jet* jet : event->jets("antikt_R04")) {
-            if (jet->pT() > 30. && fabs(jet->eta()) < 2.8){ //jet->pT() > 30. && fabs(jet->eta()) < 2.8
+            if (jet->pT() > 30. && fabs(jet->eta()) < 2.8){ 
               baselineJets.push_back(jet);
             } 
           }
@@ -215,7 +215,7 @@ namespace Gambit {
 
         bool canidate_event = false;
         
-        if(nPhotons >= 2){ //trenger egt ikke?
+        if(nPhotons >= 2){ 
 
           if (nElectrons == 0 && nMuons == 0){
         
