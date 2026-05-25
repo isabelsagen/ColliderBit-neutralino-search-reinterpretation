@@ -106,7 +106,7 @@ Printer:
   
   printer: ascii
   options:
-    output_file: "SR_signal_test_scaling.txt" #"/Users/isabelsagen/Desktop/master/plotting/data/SR_signal.txt" #"zing.txt" 
+    output_file: "SR_scan.txt"  
     #group: "slepton"
     delete_file_on_restart: true
 
@@ -216,8 +216,8 @@ Rules:
     options:
       silenceLoop: false
       LHC_13TeV:
-        min_nEvents: 10000 # @Isabel: Her setter du hvor mange events Pythia skal generere
-        max_nEvents: 10000  # @Isabel: (Bruk samme tall for min og max inntil videre.)
+        min_nEvents: 10000  #
+        max_nEvents: 10000  # 
         events_between_convergence_checks: 1000000
         target_fractional_uncert: 0.3
         halt_when_systematic_dominated: true
@@ -225,7 +225,7 @@ Rules:
         all_SR_must_converge: false
         maxFailedEvents: 10
         analyses:
-          # @Isabel: Endre dette navnet til det navnet du har gitt analysen du jobber med
+          
           - ATLAS_Isabel
 
   # Choose Monte Carlo event simulator and options.
