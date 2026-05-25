@@ -357,7 +357,7 @@ Rules:
   #   type: HepMC3::GenEvent
   #   function: generateEventPythia_HepMC
 
-  # @Isabel: Tipper du må kommentere ut denne "PerformInitialCrossSection"-blokka.
+
   #- capability: PerformInitialCrossSection
   #  function: PerformInitialCrossSection_Pythia
   #  options:
@@ -391,7 +391,7 @@ Rules:
     function: operateLHCLoop
     options:
       silenceLoop: false
-      # @Isabel: Tipper du må kommentere ut de to neste linjene
+
       #    use_colliders:
       #  - LHC_13TeV
       LHC_13TeV:
@@ -501,7 +501,7 @@ KeyValues:
     model_invalid_for_lnlike_below: -5e5
     print_invalid_points: true
 
-  # @Isabel: Her velger du hvilken mappe GAMBIT skal skrive output-filer til
+
   default_output_path: "runs/ColliderBit_EWMSSM/"
 
   debug: true
