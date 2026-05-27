@@ -183,14 +183,14 @@ namespace Gambit {
         removeOverlap(baselineMuons, baselinePhotons, 0.4);
         removeOverlap(baselineJets, baselinePhotons, 0.4);
 
-        vector<const HEPUtils::Jet*> baselineJets_hei = applyBTaggingEfficiency(baselineJets, 0.77); 
+        vector<const HEPUtils::Jet*> baselineJets_ = applyBTaggingEfficiency(baselineJets, 0.77); 
 
         applyTightPhoton(baselinePhotons); 
 
 
 
         vector<const HEPUtils::Jet*> signalBJets;
-        for (const HEPUtils::Jet* jet : baselineJets_hei){
+        for (const HEPUtils::Jet* jet : baselineJets_){
           if (jet->btag()){
             signalBJets.push_back(jet);
           }
@@ -207,7 +207,7 @@ namespace Gambit {
 
         int nElectrons = baselineElectrons.size();
         int nMuons = baselineMuons.size();
-        int nJets = baselineJets_hei.size();
+        int nJets = baselineJets_.size();
         int nBJets  = signalBJets.size();
         int nPhotons = signalPhotons.size(); 
 
@@ -330,7 +330,7 @@ namespace Gambit {
         }
         
         // Delete new'd pointers
-        for (const HEPUtils::Jet* jet : baselineJets_hei){ 
+        for (const HEPUtils::Jet* jet : baselineJets_){ 
           delete jet;
         }
       
