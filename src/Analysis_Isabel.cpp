@@ -62,6 +62,9 @@ inline void applyLooseElectron(std::vector<const HEPUtils::Particle*>& electrons
 
 namespace Gambit {
   namespace ColliderBit {
+
+    //#define CUTFLOW
+
     using namespace std; 
 
 
@@ -355,7 +358,8 @@ namespace Gambit {
 
 
 
-        /* 
+        #ifdef CUTFLOW 
+        
         std::cout << "Scaled candidate events " << _counters.at("common_selection").sum() << std::endl;
         std::cout << "=====================================" << std::endl;
          
@@ -386,7 +390,8 @@ namespace Gambit {
         std::cout << "SR1Z: " << _counters.at("SR1Z").sum() << std::endl;
         std::cout << "SR2 : " << _counters.at("SR2").sum() << std::endl;
         std::cout << "=====================================" << std::endl;
-        */
+
+        #endif
 
         
 
