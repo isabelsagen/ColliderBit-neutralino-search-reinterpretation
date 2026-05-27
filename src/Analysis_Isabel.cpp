@@ -177,9 +177,7 @@ namespace Gambit {
 
 
         applyLooseElectron(baselineElectrons); 
-
         ATLAS::applyMuonIDEfficiency2020(baselineMuons, "Medium"); 
-
 
         removeOverlap(baselineElectrons, baselinePhotons, 0.4);
         removeOverlap(baselineMuons, baselinePhotons, 0.4);
