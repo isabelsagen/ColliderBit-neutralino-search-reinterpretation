@@ -360,7 +360,7 @@ namespace Gambit {
 
         #ifdef CUTFLOW 
         
-        std::cout << "Scaled candidate events " << _counters.at("common_selection").sum() << std::endl;
+        std::cout << "Candidate events " << _counters.at("common_selection").sum() << std::endl;
         std::cout << "=====================================" << std::endl;
          
         std::cout << "=== SR1h ===" << std::endl;
