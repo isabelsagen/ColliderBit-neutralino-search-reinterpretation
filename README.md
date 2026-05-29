@@ -79,7 +79,14 @@ These define the parameter scan and physics setup used in ColliderBit.
 Run GAMBIT with:
 
 ```bash
-./gambit <config>.yaml
+./gambit example.yaml
 ```
 
-## 
+## 5. Modification
+
+To print the cut-flow from `Analysis_Isabel.cpp` enable:
+
+```
+//#define CUTFLOW
+```
+
