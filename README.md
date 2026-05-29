@@ -84,7 +84,7 @@ Run GAMBIT with:
 
 ## 5. Modification
 
-To print the cut-flow from `Analysis_Isabel.cpp` enable:
+To print the cut-flow from `Analysis_Isabel.cpp`, uncomment:
 
 ```
 //#define CUTFLOW
