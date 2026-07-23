@@ -263,7 +263,6 @@ namespace Gambit {
 
 
           // SR1h cutflow
-
           if (met_SR1) _counters.at("SR1h_ETmiss_100").add_event(event);
           if (met_SR1 && m_diphoton) _counters.at("SR1h_m_diphoton").add_event(event);
           if (met_SR1 && m_diphoton && SR1h_m_bb) _counters.at("SR1h_m_bb").add_event(event);
@@ -272,7 +271,6 @@ namespace Gambit {
           if (met_SR1 && m_diphoton && SR1h_m_bb && ratio_04 && diphoton_pt) _counters.at("SR1h").add_event(event);
 
           // SR1Z cutflow
-
           if (met_SR1) _counters.at("SR1Z_ETmiss_100").add_event(event);
           if (met_SR1 && m_diphoton) _counters.at("SR1Z_m_diphoton").add_event(event);
           if (met_SR1 && m_diphoton && SR1Z_m_bb) _counters.at("SR1Z_m_bb").add_event(event);
